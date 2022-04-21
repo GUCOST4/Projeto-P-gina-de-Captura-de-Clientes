@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* COMANDO USADO PARA RESETAR CONFIGURAÇÕES DO BROWSER */
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* CONTAINER COMO LIMITADOR DO HEADER FOI APLICADO UMA DIMENSÃO MAXIMA DE 100PX E MARGIN AUTO PARA CENTRALIZAR A BARRA */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+
+
+}
+
+header {
+    background-color: #48c5ce;
+    text-align: center;
+    color: white;
+    padding: 10px;
+
+}
+
+.title {
+    font-size: 26px;
+}
+
+section {
+
+    padding: 20px;
+    /* PADDING FOI USADO PRA "DESCOLAR" O ELEMENTOS SECTION DOS DEMAIS */
+    background-image: url('../images/people.jpg');
+    background-size: cover;
+    /* BACKGROUND-SIZE:COVER FOI USADO PARA FAZER COM QUE A IMAGEM APARECESSE INTEIRA */
+    overflow: hidden;
+    /* OVERFLOW HIDDEN FEZ QUEM QUE A IMAGEM COBRISSE DOTO SECTION */
+
+
+}
+
+.formContainer {
+    max-width: 230px;
+    /* MAX-WIDHT PARA LIMITAR LARGURA DA CAIXA DO FORMULÁRIO ATRAVES DO FORMCONTAINER */
+    background-color: #ffffffbb;
+    padding: 20px;
+    float: right;
+    /* FLOAT RIGHT USADO PRA JOGAR O FORMULÁRIO NO LADO DIREITO DA TELA */
+
+
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.mb {
+    margin-bottom: 15px;
+
+}
+
+input,
+select {
+    /* COMO QUERO QUE OS ELEMENTOS DE INPUT(NOME, EMAIL) E SELECT(RJ,SP,MG,ES) TENHAM UM DIMENSIONAMENTO SELECIONEI JUNTOS */
+    width: 100%;
+    box-sizing: border-box;
+    /* BOX-SIZING: BORDER BOX FOI USADO PARA IGUALAR OS TAMANHOS DA CAIXAS DE INPUT E SELECT */
+    padding: 10PX;
+    border: none;
+    /* BORDER NONE RETIORU A BORDAR DA CAIXAS DE INPUT */
+    margin-bottom: 10PX;
+    /* CRIOU UM ESPAÇO EMNTRE AS CAIXAS DE INPUT */
+
+}
+
+input[type="submit"] {
+    /* USADO PARA ESPECIFICAR CARACTERÍSTICAS QUE SÓ SERÃO APLICADAS NO INPUT QUE SEJAM DO TIPO SUBMIT */
+    color: white;
+    background-color: #48c5ce;
+    font-weight: bold;
+    /* font-weight usado para aplicar negrito */
+
+}
+
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /* OS TRÊS COMANDOS FORAM USADOS PARA PADRONIZAR A SETA  DO SELECT NOS DIFERENTES TIPOS DE NAVEGADORES. RETIRANDO AS SETAS PADRÃO. */
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+    /* ESCOLHI A SETA QUE PERSONALIZADA E O NO REPEAT FOI PARA SÓ APARECER UMA SETA */
+    background-position-x: calc(100% - 10px);
+    /* foi usado o comando para definir a posição no eixo X da seta dentro do quadro */
+    background-position-y: center;
+}
+
+footer {
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+    /* COMO O DISPLAY DO DESCRIPTION É INLINE BLOCK AO CENTRALIZAR O TEXT ALIGN CENTRALIZA COMO SE FOSSE BLOCO */
+
+
+}
+
+.picture {
+    width: 160px;
+    /* A IMAGE NÃO É POR PADRÃO BLOCK */
+
+}
+
+.description {
+    display: inline-block;
+    /* LEMBRANDO QUE POR PADRÃO O PARÁGRAFO É DISPLAY:BLOCK LOGO OCUPA TODA LINHA. DESSA FORMA FOI TRANSFORMADA PRA INLINE-BLOCK PARA POSSIBILITAR FICAR AO LADO DA IMAGEM. */
+    color: white;
+    max-width: 40%;
+    margin-left: 40px;
+    text-align: left;
+    /* PARA CRIAR UMA ORGANIZAÇÃO DE TEXTO À ESQUERDA FOI NECESSÁRIO FAZER UM TEXT ALIGNE "DENTRO" DO DESCRIPTION */
+
+}
+
+.description p,
+.description h3 {
+    margin-bottom: 20px;
+
+}
+
+.DEScription h3{
+font-size: 24px;
+
+}
+
+@MEDIA screen and (max-width:200px) {
+    
+    .section{max-width: 230px;
+    /* MAX-WIDHT PARA LIMITAR LARGURA DA CAIXA DO FORMULÁRIO ATRAVES DO FORMCONTAINER */
+    background-color: #ffffffbb;
+    padding: 20px;
+    float: right;}
+}
